@@ -1,0 +1,16 @@
+<svg width="138px" height="207px" viewBox="0 0 138 207" xmlns="http://www.w3.org/2000/svg" >
+    <defs>
+      <linearGradient id="redGradient" x1="100%" y1="100%">
+        <stop offset="0%" stop-color="red">
+          <animate attributeName="stop-color" values="#F8BB1B" dur="2s" repeatCount="indefinite" />
+        </stop>
+        <stop offset="100%" stop-color="red">
+          <animate attributeName="stop-color" values="#F81B1B" dur="14s" repeatCount="indefinite" />
+          <animate attributeName="offset" values=".80;.60;.40;.20;.40;.60;.80" dur="2s" repeatCount="indefinite" />
+        </stop>
+      </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="#F81B1B" fill-rule="evenodd">
+        <path d="M69,207 C106.555363,207 137,177.003078 137,140 C137,126.295903 139.000011,93 111.000003,51 C92.0000029,170.999999 90.0000029,4 43.9999991,0 C74.0000029,51 13.9999995,134 30.000001,37 C-7.9999999,74 1,122.123639 1,140 C1,177.003078 31.444637,207 69,207 Z" id="Oval-14" fill="url(#redGradient)"></path>
+    </g>
+</svg>
