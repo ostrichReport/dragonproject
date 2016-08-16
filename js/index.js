@@ -209,7 +209,7 @@ function checkKey(e) {
 function playGif() {
   var query = $('input[name="query"]').val();
   var query2 = query.replace(/ /g, '+');
-  $.get(('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=' + query2), function(data) {
+  $.get(('https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=' + query2), function(data) {
     model.gifUrl = data.data.fixed_width_downsampled_url;
     model.gifWidth = data.data.fixed_width_downsampled_width;
     model.gifHeight = data.data.fixed_width_downsampled_height;
