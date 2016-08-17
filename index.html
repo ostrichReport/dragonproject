@@ -380,7 +380,7 @@
               
                   <div id="buttonBox">
                       <div class='gameButton' id='food'>Food Time</div>
-                      <div class='gameButton' id='stuff'>Accessory Time</div>
+                      <div class='gameButton' {{#unless stuff}}id='stuff'{{else}}id="stuffSelected"{{/unless}}id='stuff'>Accessory Time</div>
                       <div class='gameButton' {{#unless gif}}id='gif'>Gif Time{{else}}id="gifActive">Turn Off Gif{{/unless}}</div>
                       <div class='gameButton' id='dance'>Party Time</div>
                   </div>

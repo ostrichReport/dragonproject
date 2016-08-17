@@ -58,7 +58,8 @@ function setup() {
 
   $('#loginContainer').on('click', '#gifSubmit', playGif);
   $('#loginContainer').on('click', '#gifActive', closeGif);  
-  $('#loginContainer').on('keydown', '#gifQuery', checkKey); 
+  $('#loginContainer').on('keydown', '#gifQuery', checkKey);
+  $('#loginContainer').on('click', '#stuffSelected', closeStuff); 
   $('#loginContainer').on('click', '.stuffButton', dressUp); 
   $('#loginContainer').on('click', '.stuffActive', dressDown); 
 
@@ -165,12 +166,12 @@ function stuff() {
   model.gif = false;
   model.dance = false;
   renderLogin();
+}
 
-  $('#stuff').on('click', function() {
+function closeStuff() {
     model.stuff = false;
     renderLogin();
-  });
-}
+  };
 
 function dressUp() {
   var currentStuff = $(this).attr('data-id');
@@ -191,13 +192,11 @@ function gif() {
   model.gif = true;
   model.dance = false;
   renderLogin();
-  $('#gif').text('Turn Off Gif'); 
 }
 
 function closeGif() {
     model.gif = false;
     renderLogin();
-    $('#gif').text('Gif Time');
   };
 
 function checkKey(e) {
