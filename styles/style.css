@@ -45,6 +45,10 @@ h1 {
   line-height: 2em;
 }
 
+#mobile {
+  display: none;
+}
+
 h2 {
   font-size: 1.75em;
   margin-bottom: 2%;
@@ -725,4 +729,109 @@ a {
   width: 1.4%;
   vertical-align: middle;
   margin-right: 1%;
+}
+
+@media screen and (max-device-width: 1024px) {
+  body {
+    width: 100%;
+  }
+  #intro #mobile {
+    display: inline;
+    color: #00418E;
+    font-size: 1em;
+  }
+  #tvBox {
+    right: 2%;
+  }
+  .stuffButton {
+    font-size: .875em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #dragonHead {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 886px) {
+  #signUp {
+    margin-bottom: 5%;
+  }
+  #loginForm input {
+    width: 80%;
+    font-size: .875em;
+  }
+  #flame2 {
+    width: 4%;
+  }
+  .logo {
+    width: 2%;
+  }
+  #intro {
+    margin: 0 2%;
+  }
+  #egg {
+    padding: 10% 10% 0 10%;
+  }
+  #dragonMain {
+    padding: 2% 20% 0 2%;
+  }
+  #dragonBox {
+    margin: 0;
+  }
+  #tvBox {
+    top: 50%;
+    width: 250px;
+    height: 300px;
+  }
+  #buttonBox {
+    margin-top: 0;
+  }
+}
+
+@media only screen 
+  and (max-width: 768px) 
+  and (orientation: landscape) {
+    .game {
+      height: 160vh;
+    }
+    #login {
+      height: 150vh;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+  #dragonHead {
+    width: 25%;
+  }
+   #stuffBox {
+    margin: 2% 0 0 15%;
+    width: 50%;
+  }
+  .stuffButton {
+    font-size: .75em;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  #loginForm, #guestForm {
+    height: 250px;
+  }
+  h1 {
+    font-size: 3.5em;
+  }
+  #flame2 {
+    width: 5%;
+  }
+  #dragonHead {
+    width: 30%;
+  }
+  #egg {
+    padding: 20% 20% 0 20%;
+  }
+    #stuffBox {
+    margin: 1% 0 0 10%;
+    width: 60%;
+  }
 }

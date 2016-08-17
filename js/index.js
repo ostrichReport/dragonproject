@@ -210,12 +210,17 @@ function playGif() {
   var query = $('input[name="query"]').val();
   var query2 = query.replace(/ /g, '+');
   $.get(('https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=' + query2), function(data) {
-    model.gifUrl = data.data.fixed_width_downsampled_url;
-    model.gifWidth = data.data.fixed_width_downsampled_width;
-    model.gifHeight = data.data.fixed_width_downsampled_height;
-    model.gifSubmit = true;
-    renderLogin();
-    $('#gif').text('Turn Off Gif');
+    var u = data.data.fixed_width_downsampled_url;
+    if (u.charAt(4) === 's') {
+      model.gifUrl = u;
+      model.gifWidth = data.data.fixed_width_downsampled_width;
+      model.gifHeight = data.data.fixed_width_downsampled_height;
+      model.gifSubmit = true;
+      renderLogin();
+      $('#gif').text('Turn Off Gif');
+    } else {
+      playGif();
+    }
 
     var mood = Math.random();
     if (mood >=.5) {
