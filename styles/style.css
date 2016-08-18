@@ -1,0 +1,836 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous|Lato);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Lato, Arial, sans-serif;
+  color: #2B2B2B;
+}
+
+header {
+  background-color: #242424;
+  text-align: center;
+  padding: 1% 0;
+}
+
+#flame2 {
+  width: 3%;
+  margin-right: 1%;
+}
+
+h1 {
+  font-family: Righteous, sans-serif;
+  font-size: 4em;
+  color: #8D699D;
+  display: inline;
+}
+
+#login {
+  background-color: #FEB097;
+  height: 90vh;
+  text-align: center;
+}
+
+#intro {
+  padding: 4% 0;
+}
+
+#intro p {
+  font-size: 1.125em;
+  line-height: 2em;
+}
+
+#mobile {
+  display: none;
+}
+
+h2 {
+  font-size: 1.75em;
+  margin-bottom: 2%;
+}
+
+#loginForm, #guestForm {
+  background-color: #B3C5DA;
+  display: inline-block;
+  padding: 3% 3%;
+  border-radius: 10%;
+  border: 2px solid #fff;
+  height: 275px;
+  width: 25%;
+  vertical-align: top;
+  margin: 0 8%;
+}
+
+#loginForm input {
+  display: block;
+  margin: 8% auto;
+  font-size: 1em;
+  padding: 2%;
+}
+
+#guest {
+  margin-top: 20%;
+}
+
+.button {
+  padding: 5%;
+  margin: 0 3%;
+  background-color: #BAA4C3;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.125em;
+  border-radius: 8%;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.signOut {
+  padding: .75%;
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+  border-radius: 8%;
+  float: right;
+  margin: 1%;
+  font-size: .875em;
+}
+
+.signOut:hover {
+  cursor: pointer;
+}
+
+.leaveButton {
+  width: 100%;
+  height: 75px;
+}
+
+.signOut2 {
+  padding: .75%;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 8%;
+  margin: 1%;
+  font-size: .875em;
+  position: absolute;
+  right: 0;
+}
+
+.signOut2:hover {
+  cursor: pointer;
+}
+
+.leaveButton2 {
+  position: relative;
+}
+
+#onboard {
+  background-color: #BAA4C3;
+  text-align: center;
+}
+
+#instructions {
+  display: block;
+}
+
+.questions p {
+  font-size: 1.5em;
+  margin-top: 5%;
+}
+
+#dragonForm input {
+  display: block;
+  margin: 2% auto;
+  font-size: 1em;
+  padding: 1%;
+}
+
+#dragonHead {
+  width: 15%;
+  margin: 1%;
+}
+
+#row1, #row2 {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.colors {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+}
+
+#color1 {
+  background-color: #8D699D;
+}
+
+#color2 {
+  background-color: #C55BA0;
+}
+
+#color3 {
+  background-color: #C54E4E;
+}
+
+#color4 {
+  background-color: #F8661B;
+}
+
+#color5 {
+  background-color: #E2AF0B;
+}
+
+#color6 {
+  background-color: #5C7FA9;
+}
+
+#color7 {
+  background-color: #3E9884;
+}
+
+#color8 {
+  background-color: #728A53;
+}
+
+#color9 {
+  background-color: #98C563;
+}
+
+#color10 {
+  background-color: #878787;
+}
+
+#meetButton {
+  margin: 5% 0;
+  padding: 1%;
+  background-color: #BAE7B5;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.125em;
+  border-radius: 8%;
+  border: 2px solid #fff;
+}
+
+#meetButton:hover {
+  cursor: pointer;
+}
+
+#hatching {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #BAA4C3;
+  border: 4px solid #fff;
+  border-radius: 8%;
+  position: relative;
+}
+
+@-webkit-keyframes shake {
+  0% {opacity: 0;}
+  60% {opacity: 1;}
+  65% {transform: translateX(-3px);}
+  70% {transform: translateX(3px);}
+  75% {transform: translateX(-3px);}
+  80% {transform: translateX(3px);}
+  85% {transform: translateX(-3px);}
+  90% {transform: translateX(3px);}
+  95% {transform: translateX(-3px);}
+  100% {transform: translateX(3px);}
+}
+@-moz-keyframes shake {
+  0% {opacity: 0;}
+  60% {opacity: 1;}
+  65% {transform: translateX(-3px);}
+  70% {transform: translateX(3px);}
+  75% {transform: translateX(-3px);}
+  80% {transform: translateX(3px);}
+  85% {transform: translateX(-3px);}
+  90% {transform: translateX(3px);}
+  95% {transform: translateX(-3px);}
+  100% {transform: translateX(3px);}
+}
+@keyframes shake {
+  0% {opacity: 0;}
+  60% {opacity: 1;}
+  65% {transform: translateX(-3px);}
+  70% {transform: translateX(3px);}
+  75% {transform: translateX(-3px);}
+  80% {transform: translateX(3px);}
+  85% {transform: translateX(-3px);}
+  90% {transform: translateX(3px);}
+  95% {transform: translateX(-3px);}
+  100% {transform: translateX(3px);}
+}
+
+@-webkit-keyframes hatch {
+  0% {transform: translateY(0px);}
+  20% {transform: translateY(-10px);}
+  100% {transform: rotate(-60deg);}
+}
+@-moz-keyframes hatch {
+  0% {transform: translateY(0px);}
+  20% {transform: translateY(-10px);}
+  100% {transform: rotate(-60deg);}
+}
+@keyframes hatch {
+  0% {transform: translateY(0px);}
+  20% {transform: translateY(-10px);}
+  100% {transform: rotate(-60deg);}
+}
+
+@-webkit-keyframes buttonAppear {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@-moz-keyframes buttonAppear {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes buttonAppear {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+#egg {
+  width: 100%;
+  animation: shake 3s 1;
+  padding: 5% 3% 0 3%;
+}
+
+#dragonNew {
+  opacity: 0;
+  animation: appear 1s 5s forwards;
+}
+
+#top {
+  transform-origin: bottom left;
+  animation: hatch 3s 3s forwards;
+}
+
+#startButton {
+  background-color: #FFDD8A;
+  padding: 1.5%;
+  text-align: center;
+  font-size: 1.125em;
+  border-radius: 8%;
+  border: 2px solid #fff;
+  position: absolute;
+  right: 5%;
+  top: 30%;
+  visibility: hidden;
+  opacity: 0;
+  animation: buttonAppear 1s 9s forwards;
+}
+
+#startButton:hover {
+  cursor: pointer;
+}
+
+#namePlate {
+  text-align: center;
+  font-size: 3em;
+  background-color: #FFDD8A;
+  margin: 5% 0 4% 0;
+  opacity: 0;
+  animation: appear 1s 7s forwards;
+}
+
+.game {
+  background-color: #B3C5DA;
+  height: 100vh;
+}
+
+#nameTag {
+  font-size: 3em;
+  font-family: Righteous, sans-serif;
+  color: #404A55;
+  text-align: center;
+}
+
+#dragonBox {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#dragonMain {
+  padding: 4% 5% 0 5%;
+}
+
+#buttonBox {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+.gameButton {
+  background-color: #FEB097;
+  padding: 1.5%;
+  text-align: center;
+  font-size: 1.125em;
+  border-radius: 8%;
+  border: 2px solid #fff;
+}
+
+.gameButton:hover {
+  cursor: pointer;
+}
+
+@-webkit-keyframes appear {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes appear {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes appear {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#tvBox {
+  width: 350px;
+  height: 350px;
+  background-color: #242424;
+  border-radius: 10%;
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  animation: appear 1s forwards;
+}
+
+#tvBox input {
+  margin: 2% auto;
+  font-size: 1em;
+  padding: 1%;
+  display: inline-block;
+}
+
+#tvBox p {
+  color: #fff;
+  text-align: center;
+  padding: 5%;
+}
+
+#gifSubmit {
+  display: inline-block;
+  background-color: #ccc;
+  padding: 1%;
+  border-radius: 8%;
+}
+
+#gifSubmit:hover {
+  cursor: pointer;
+}
+
+#gifInput {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.embed {
+  padding-top: 2%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+
+#giphyLogo {
+  width: 40%;
+  position: absolute;
+  bottom: 4px;
+  right: 20px;
+}
+
+#angry {
+  opacity: 0;
+}
+
+.appear {
+  animation: appear 1s 2s forwards;
+}
+
+@-webkit-keyframes jump {
+  0%, 50%, 100% {transform: translateY(0);}
+  25%, 75% {transform: translateY(-50px);}
+}
+@-moz-keyframes jump {
+  0%, 50%, 100% {transform: translateY(0);}
+  25%, 75% {transform: translateY(-50px);}
+}
+@keyframes jump {
+  0%, 50%, 100% {transform: translateY(0);}
+  25%, 75% {transform: translateY(-50px);}
+}
+
+@-webkit-keyframes rotateArm {
+  0%, 50%, 100% {transform: rotate(0deg);}
+  25%, 75% {transform: rotate(-20deg);}
+}
+@-moz-keyframes rotateArm {
+  0%, 50%, 100% {transform: rotate(0deg);}
+  25%, 75% {transform: rotate(-20deg);}
+}
+@keyframes rotateArm {
+  0%, 50%, 100% {transform: rotate(0deg);}
+  25%, 75% {transform: rotate(-20deg);}
+}
+
+@-webkit-keyframes rotateRightArm {
+  0%, 50%, 100% {transform: translateX(184px) translateY(267px) rotate(0deg);}
+  25%, 75% {transform: translateX(184px) translateY(267px) rotate(-20deg);}
+}
+@-moz-keyframes rotateRightArm {
+  0%, 50%, 100% {transform: translateX(184px) translateY(267px) rotate(0deg);}
+  25%, 75% {transform: translateX(184px) translateY(267px) rotate(-20deg);}
+}
+@keyframes rotateRightArm {
+  0%, 50%, 100% {transform: translateX(184px) translateY(267px) rotate(0deg);}
+  25%, 75% {transform: translateX(184px) translateY(267px) rotate(-20deg);}
+}
+
+@-webkit-keyframes berry {
+  0% {transform: translateX(200px);}
+  2% {opacity: 1;}
+  20% {transform: translateX(200px);}
+  98% {transform: translateX(0);}
+  99% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@-moz-keyframes berry {
+  0% {transform: translateX(200px);}
+  2% {opacity: 1;}
+  20% {transform: translateX(200px);}
+  98% {transform: translateX(0);}
+  99% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes berry {
+  0% {transform: translateX(200px);}
+  2% {opacity: 1;}
+  20% {transform: translateX(200px);}
+  98% {transform: translateX(0);}
+  99% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@-webkit-keyframes eating {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
+}
+@-moz-keyframes eating {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
+}
+@keyframes eating {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
+}
+
+@-webkit-keyframes wagging {
+  0%, 100% {transform: rotate(0deg);}
+  50% {transform: rotate(5deg);}
+}
+@-moz-keyframes wagging {
+  0%, 100% {transform: rotate(0deg);}
+  50% {transform: rotate(5deg);}
+}
+@keyframes wagging {
+  0%, 100% {transform: rotate(0deg);}
+  50% {transform: rotate(5deg);}
+}
+
+.jump {
+  animation: jump 2s 2s infinite linear;
+}
+
+.armRotate1 {
+  transform-origin: top left;
+  animation: rotateArm 2s .5s infinite;
+}
+
+.armRotate2 {
+  transform-origin: top left;
+  animation: rotateRightArm 2s infinite;
+}
+
+#berry {
+  opacity: 0;
+}
+
+.berryAppear {
+  animation: berry 1.5s forwards linear;
+}
+
+.eat {
+  animation: eating .5s 1.5s 5 linear;
+}
+
+.wag {
+  animation: wagging 1s 3s 3;
+}
+
+#stuffBox {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  margin: 1% 0 0 18%;
+  width: 40%;
+}
+
+.stuffButton {
+  background-color: #BAE7B5;
+  padding: 1%;
+  text-align: center;
+  font-size: 1em;
+  border-radius: 8%;
+  border: 2px solid #fff;
+}
+
+.stuffButton:hover {
+  cursor: pointer;
+}
+
+.stuffActive {
+  background-color: #FFDD8A;
+}
+
+@-webkit-keyframes party {
+  0% {background-color: #381A62;}
+  49% {background-color: #381A62;}
+  50% {background-color: #053E7F;}
+  99% {background-color: #053E7F;}
+  100% {background-color: #381A62;}
+}
+@-moz-keyframes party {
+  0% { background-color: #381A62;}
+  49% { background-color: #381A62;}
+  50% { background-color: #053E7F;}
+  99% { background-color: #053E7F;}
+  100% { background-color: #381A62;}
+}
+@keyframes party {
+  0% {background-color: #381A62;}
+  49% {background-color: #381A62;}
+  50% {background-color: #053E7F;}
+  99% {background-color: #053E7F;}
+  100% {background-color: #381A62;}
+}
+
+@-webkit-keyframes robotLeft {
+  0%, 45%, 100% {transform: rotate(0deg);}
+  50%, 95% {transform: rotate(-35deg);}
+}
+@-moz-keyframes robotLeft {
+  0%, 45%, 100% {transform: rotate(0deg);}
+  50%, 95% {transform: rotate(-35deg);}
+}
+@keyframes robotLeft {
+  0%, 45%, 100% {transform: rotate(0deg);}
+  50%, 95% {transform: rotate(-35deg);}
+}
+
+@-webkit-keyframes robotRight {
+  0%, 45%, 100% {transform: translateX(184px) translateY(267px) rotate(0deg);}
+  50%, 95% {transform: translateX(184px) translateY(267px) rotate(-35deg);}
+}
+@-moz-keyframes robotRight {
+  0%, 45%, 100% {transform: translateX(184px) translateY(267px) rotate(0deg);}
+  50%, 95% {transform: translateX(184px) translateY(267px) rotate(-35deg);}
+}
+@keyframes robotRight {
+  0%, 45%, 100% {transform: translateX(184px) translateY(267px) rotate(0deg);}
+  50%, 95% {transform: translateX(184px) translateY(267px) rotate(-35deg);}
+}
+
+@-webkit-keyframes dance {
+  0%, 45%, 100% {transform: rotate(0deg);}
+  50%, 95% {transform: rotate(6deg);}
+}
+@-moz-keyframes dance {
+  0%, 45%, 100% {transform: rotate(0deg);}
+  50%, 95% {transform: rotate(6deg);}
+}
+@keyframes dance {
+  0%, 45%, 100% {transform: rotate(0deg);}
+  50%, 95% {transform: rotate(6deg);}
+}
+
+.partyTime {
+  animation: party 1.5s infinite;  
+}
+
+.bodyDance {
+  transform-origin: bottom center;
+  animation: dance 3s infinite;
+}
+
+.leftRobot {
+  transform-origin: top left;
+  animation: robotLeft 1.5s .75s infinite;
+}
+
+.rightRobot {
+  transform-origin: top left;
+  animation: robotRight 1.5s infinite;
+}
+
+footer {
+  width: 100%;
+  padding: 1% 2% 1% 0;
+  background-color: #242424;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.125em;
+  color: #9b9b9b;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  display: inline;
+  width: 1.4%;
+  vertical-align: middle;
+  margin-right: 1%;
+}
+
+@media screen and (max-device-width: 1024px) {
+  body {
+    width: 100%;
+  }
+  #intro #mobile {
+    display: inline;
+    color: #00418E;
+    font-size: 1em;
+  }
+  #tvBox {
+    right: 2%;
+  }
+  .stuffButton {
+    font-size: .875em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #dragonHead {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 886px) {
+  #signUp {
+    margin-bottom: 5%;
+  }
+  #loginForm input {
+    width: 80%;
+    font-size: .875em;
+  }
+  #flame2 {
+    width: 4%;
+  }
+  .logo {
+    width: 2%;
+  }
+  #intro {
+    margin: 0 2%;
+  }
+  #egg {
+    padding: 10% 10% 0 10%;
+  }
+  #dragonMain {
+    padding: 2% 20% 0 2%;
+  }
+  #dragonBox {
+    margin: 0;
+  }
+  #tvBox {
+    top: 50%;
+    width: 250px;
+  }
+  #buttonBox {
+    margin-top: 0;
+  }
+}
+
+@media only screen 
+  and (max-width: 768px) 
+  and (orientation: landscape) {
+    .game {
+      height: 160vh;
+    }
+    #login {
+      height: 150vh;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+  #dragonHead {
+    width: 25%;
+  }
+   #stuffBox {
+    margin: 2% 0 0 15%;
+    width: 50%;
+  }
+  .stuffButton {
+    font-size: .75em;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  #loginForm, #guestForm {
+    height: 250px;
+  }
+  h1 {
+    font-size: 3.5em;
+  }
+  #flame2 {
+    width: 5%;
+  }
+  #dragonHead {
+    width: 30%;
+  }
+  #egg {
+    padding: 20% 20% 0 20%;
+  }
+    #stuffBox {
+    margin: 1% 0 0 10%;
+    width: 60%;
+  }
+}
