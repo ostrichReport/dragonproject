@@ -575,13 +575,13 @@ h2 {
 }
 
 .armRotate1 {
-  transform-origin: top left;
-  animation: rotateArm 2s .5s infinite;
+  transform-origin: center center;
+  animation: rotateArm 2s infinite;
 }
 
 .armRotate2 {
   transform-origin: top left;
-  animation: rotateRightArm 2s infinite;
+  animation: rotateRightArm 2s .5s infinite;
 }
 
 #berry {
@@ -697,13 +697,13 @@ h2 {
 }
 
 .leftRobot {
-  transform-origin: top left;
-  animation: robotLeft 1.5s .75s infinite;
+  transform-origin: center center;
+  animation: robotLeft 1.5s infinite;
 }
 
 .rightRobot {
   transform-origin: top left;
-  animation: robotRight 1.5s infinite;
+  animation: robotRight 1.5s .75s infinite;
 }
 
 footer {
@@ -829,7 +829,7 @@ a {
   #egg {
     padding: 20% 20% 0 20%;
   }
-    #stuffBox {
+  #stuffBox {
     margin: 1% 0 0 10%;
     width: 60%;
   }
