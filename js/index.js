@@ -57,11 +57,11 @@ function setup() {
   $('#loginContainer').on('click', '#dance', dance);
 
   $('#loginContainer').on('click', '#gifSubmit', playGif);
-  $('#loginContainer').on('click', '#gifActive', closeGif);  
+  $('#loginContainer').on('click', '#gifActive', closeGif);
   $('#loginContainer').on('keydown', '#gifQuery', checkKey);
-  $('#loginContainer').on('click', '#stuffSelected', closeStuff); 
-  $('#loginContainer').on('click', '.stuffButton', dressUp); 
-  $('#loginContainer').on('click', '.stuffActive', dressDown); 
+  $('#loginContainer').on('click', '#stuffSelected', closeStuff);
+  $('#loginContainer').on('click', '.stuffButton', dressUp);
+  $('#loginContainer').on('click', '.stuffActive', dressDown);
 
   firebase.auth().onAuthStateChanged(handleAuthStateChange);
 
@@ -208,7 +208,7 @@ function checkKey(e) {
 function playGif() {
   var query = $('input[name="query"]').val();
   var query2 = query.replace(/ /g, '+');
-  $.get(('https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=' + query2), function(data) {
+  $.get(('https://api.giphy.com/v1/gifs/random?api_key=3I7ixy1Z77JbVKU0FRiUKTdn1FxHRvU6&tag=' + query2), function(data) {
     var u = data.data.fixed_width_downsampled_url;
     if (u.charAt(4) === 's') {
       model.gifUrl = u;
