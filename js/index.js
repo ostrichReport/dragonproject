@@ -211,11 +211,11 @@ function playGif() {
   $.get(('https://api.giphy.com/v1/gifs/random?api_key=3I7ixy1Z77JbVKU0FRiUKTdn1FxHRvU6&tag=' + query2), {
       accept: '*/*'
   }, function(data) {
-    var u = data.data.fixed_width_downsampled_url;
+    var u = data.data.images.fixed_width_downsampled.url;
     if (u.charAt(4) === 's') {
       model.gifUrl = u;
-      model.gifWidth = data.data.fixed_width_downsampled_width;
-      model.gifHeight = data.data.fixed_width_downsampled_height;
+      model.gifWidth = data.data.images.fixed_width_downsampled.width;
+      model.gifHeight = data.data.images.fixed_width_downsampled.height;
       model.gifSubmit = true;
       renderLogin();
       $('#gif').text('Turn Off Gif');
